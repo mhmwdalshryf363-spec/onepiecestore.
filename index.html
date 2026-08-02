@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One Piece Store | متجر المنتجات</title>
+
+    <meta name="description"
+        content="One Piece Store - متجر إلكتروني احترافي لعرض أفضل المنتجات مع روابط شراء مباشرة.">
+
+    <meta name="keywords"
+        content="One Piece Store, متجر, منتجات, عروض, Affiliate, علي إكسبرس">
+
+    <meta name="author" content="One Piece Store">
+
+    <meta property="og:title" content="One Piece Store">
+    <meta property="og:description" content="أفضل المنتجات بأفضل الأسعار">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="assets/logo.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="One Piece Store">
+            <h2>One Piece Store</h2>
+        </div>
+
+        <nav>
+
+            <a href="#">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="pages/payment.html">طرق الدفع</a>
+            <a href="pages/shipping.html">سياسة الشحن</a>
+            <a href="pages/delivery.html">وقت التوصيل</a>
+
+        </nav>
+
+        <div class="header-icons">
+
+            <button id="cart-btn">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cart-count">0</span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>أفضل المنتجات بأفضل الأسعار</h1>
+
+            <p>
+
+                اكتشف أحدث المنتجات المختارة بعناية مع إمكانية الشراء المباشر.
+
+            </p>
+
+            <a href="#products" class="shop-btn">
+
+                تسوق الآن
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="search-section">
+
+        <input type="text" id="searchInput"
+            placeholder="ابحث عن منتج...">
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <button class="active" data-category="all">
+            الكل
+        </button>
+
+        <button data-category="electronics">
+            إلكترونيات
+        </button>
+
+        <button data-category="fashion">
+            ملابس
+        </button>
+
+        <button data-category="home">
+            المنزل
+        </button>
+
+        <button data-category="gaming">
+            ألعاب
+        </button>
+
+    </section>
+
+    <!-- Products -->
+
+    <section id="products">
+
+        <h2 class="section-title">
+
+            أحدث المنتجات
+
+        </h2>
+
+        <div id="products-container">
+
+            <!-- يتم تحميل المنتجات من JSON -->
+
+        </div>
+
+    </section>
+
+    <!-- Cart -->
+
+    <aside id="cart">
+
+        <div class="cart-header">
+
+            <h2>
+
+                سلة المشتريات
+
+            </h2>
+
+            <button id="close-cart">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+
+            <h3>
+
+                الإجمالي:
+
+                <span id="cart-total">
+
+                    0$
+
+                </span>
+
+            </h3>
+
+            <button id="checkout">
+
+                إتمام الطلب
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Floating WhatsApp -->
+
+    <a class="whatsapp"
+        href="https://wa.me/201551301299"
+        target="_blank">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+    <!-- Social -->
+
+    <div class="social-fixed">
+
+        <a href="https://www.facebook.com/share/194MGY1kdn/"
+            target="_blank">
+
+            <i class="fab fa-facebook-f"></i>
+
+        </a>
+
+        <a href="https://www.instagram.com/el__mnse____14__0600?igsh=MW9sNHl4ODd0dG5ldQ=="
+            target="_blank">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Back To Top -->
+
+    <button id="topBtn">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-links">
+
+            <a href="pages/payment.html">
+
+                طرق الدفع
+
+            </a>
+
+            <a href="pages/shipping.html">
+
+                سياسة الشحن
+
+            </a>
+
+            <a href="pages/delivery.html">
+
+                وقت التوصيل
+
+            </a>
+
+        </div>
+
+        <p>
+
+            © 2026 One Piece Store - جميع الحقوق محفوظة.
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
