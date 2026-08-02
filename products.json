@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "سماعات بلوتوث لاسلكية",
+    "description": "سماعات بجودة صوت عالية مع عزل للضوضاء وبطارية تدوم طويلاً.",
+    "price": 29.99,
+    "oldPrice": 39.99,
+    "rating": 4.9,
+    "badge": "الأكثر مبيعاً",
+    "category": "electronics",
+    "image": "assets/images/headphones.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-1"
+  },
+  {
+    "id": 2,
+    "name": "ساعة ذكية",
+    "description": "ساعة ذكية لمتابعة النشاط الرياضي والإشعارات اليومية.",
+    "price": 49.99,
+    "oldPrice": 69.99,
+    "rating": 4.8,
+    "badge": "خصم",
+    "category": "electronics",
+    "image": "assets/images/smartwatch.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-2"
+  },
+  {
+    "id": 3,
+    "name": "تيشيرت كاجوال",
+    "description": "تيشيرت قطني مريح بجودة عالية مناسب للاستخدام اليومي.",
+    "price": 19.99,
+    "oldPrice": 29.99,
+    "rating": 4.7,
+    "badge": "جديد",
+    "category": "fashion",
+    "image": "assets/images/tshirt.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-3"
+  },
+  {
+    "id": 4,
+    "name": "كرسي ألعاب",
+    "description": "كرسي مريح مع وسائد للرقبة والظهر مناسب للاعبين.",
+    "price": 159.99,
+    "oldPrice": 199.99,
+    "rating": 4.9,
+    "badge": "عرض",
+    "category": "gaming",
+    "image": "assets/images/chair.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-4"
+  },
+  {
+    "id": 5,
+    "name": "مصباح LED",
+    "description": "مصباح حديث بإضاءة قوية واستهلاك منخفض للطاقة.",
+    "price": 14.99,
+    "oldPrice": 19.99,
+    "rating": 4.6,
+    "badge": "وفر الآن",
+    "category": "home",
+    "image": "assets/images/lamp.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-5"
+  },
+  {
+    "id": 6,
+    "name": "لوحة مفاتيح ميكانيكية",
+    "description": "كيبورد ميكانيكي بإضاءة RGB مناسب للألعاب والعمل.",
+    "price": 79.99,
+    "oldPrice": 99.99,
+    "rating": 5.0,
+    "badge": "مميز",
+    "category": "electronics",
+    "image": "assets/images/keyboard.jpg",
+    "link": "https://YOUR-AFFILIATE-LINK-6"
+  }
+]
