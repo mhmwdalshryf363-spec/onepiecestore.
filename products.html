@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>المنتجات | One Piece Store</title><link rel="icon" href="logo.svg"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap"><h2 class="sec-title">كل المنتجات</h2>
+<div class="searchrow"><input id="q" type="search" placeholder="ابحث عن منتج..." aria-label="بحث"></div>
+<div class="cats" id="cats"><button class="active" data-c="all">الكل</button><button data-c="collectibles">مقتنيات</button><button data-c="caps">كابات</button><button data-c="tshirts">تيشيرتات</button><button data-c="mugs">أكواب</button></div>
+<div id="grid" class="grid"></div><p id="empty" class="empty" hidden>لا توجد منتجات مطابقة لبحثك.</p><p style="text-align:center;margin-top:18px"><button id="more" class="btn ghost" hidden>عرض المزيد</button></p></div>
+<script src="app.js" data-base=""></script><script>
+layout('products');var cat=new URLSearchParams(location.search).get('cat')||'all',all=[];
+if(!CATS[cat])cat='all';
+function draw(){var q=$('#q').value.trim().toLowerCase();var l=all.filter(function(p){return(cat==='all'||p.category===cat)&&(!q||(p.name+' '+p.description).toLowerCase().indexOf(q)>=0)});renderGrid(l,$('#grid'),$('#empty'),$('#more'));document.querySelectorAll('#cats button').forEach(function(b){b.classList.toggle('active',b.dataset.c===cat)})}
+$('#cats').onclick=function(e){var b=e.target.closest('button');if(!b)return;cat=b.dataset.c;draw()};$('#q').oninput=draw;bindSave($('#grid'));
+load().then(function(d){all=d;draw()}).catch(function(){$('#grid').innerHTML='<p class="empty">تعذر تحميل المنتجات.</p>'});
+</script></body></html>
