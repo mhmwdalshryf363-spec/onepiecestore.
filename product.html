@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>تفاصيل المنتج | One Piece Store</title><link rel="icon" href="logo.svg"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap"><div class="crumbs"><a href="index.html">الرئيسية</a> / <a href="products.html">المنتجات</a> / <span id="bc"></span></div><div id="pd"></div><h2 class="sec-title" style="margin-top:34px">منتجات مشابهة</h2><div id="grid" class="grid"></div></div>
+<script src="app.js" data-base=""></script><script>
+layout('products');var id=+new URLSearchParams(location.search).get('id');
+load().then(function(d){var p=d.filter(function(x){return x.id===id})[0];if(!p){$('#pd').innerHTML='<p class="empty">المنتج غير موجود. <a href="products.html" style="color:#ff9800">تصفح المنتجات</a></p>';return}
+document.title=p.name+' | One Piece Store';$('#bc').textContent=p.name;
+var sp=(p.specs||[]).map(function(s){return '<li>'+esc(s)+'</li>'}).join('');
+$('#pd').innerHTML='<div class="pd">'+thumb(p)+'<div><span class="tag" style="color:#ff9800;font-weight:700">'+esc(CATS[p.category]||'')+'</span><h1>'+esc(p.name)+'</h1><p>'+esc(p.description)+'</p>'+(sp?'<ul class="specs">'+sp+'</ul>':'')+(p.price?'<p><b>السعر:</b> '+esc(p.price)+' <small>(كما يظهر في المتجر)</small></p>':'<p class="store">السعر والتوفر يظهران في صفحة المتجر الأصلي.</p>')+'<div class="cact">'+buy(p)+'<button class="btn ghost" data-save="'+p.id+'">'+(saved().indexOf(p.id)>=0?'♥ في قائمتي':'♡ أضف لقائمتي')+'</button></div><p class="note" style="text-align:right">الدفع والشحن على موقع '+esc(STORES[p.store]||'المتجر الأصلي')+'.</p></div></div>';
+$('#pd').onclick=function(e){var b=e.target.closest('[data-save]');if(!b)return;toggleSave(p.id);b.textContent=saved().indexOf(p.id)>=0?'♥ في قائمتي':'♡ أضف لقائمتي'};
+var rel=d.filter(function(x){return x.category===p.category&&x.id!==p.id}).slice(0,4);$('#grid').innerHTML=rel.map(card).join('');bindSave($('#grid'))})
+</script></body></html>
