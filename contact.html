@@ -1,0 +1,5 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>تواصل معنا | One Piece Store</title><link rel="icon" href="logo.svg"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap"><h2 class="sec-title">تواصل معنا</h2><p class="note" style="margin:-8px 0 22px">للاقتراحات أو لطلب منتج معين، راسلنا على أي من حساباتنا.</p><div class="contact" id="c"></div></div>
+<script src="app.js" data-base=""></script><script>layout('contact');
+var items=[['☎','واتساب',SITE.whatsapp],['f','فيسبوك',SITE.facebook],['IG','إنستجرام',SITE.instagram],['TT','تيك توك',SITE.tiktok],['YT','يوتيوب',SITE.youtube]].filter(function(i){return ok(i[2])});
+$('#c').innerHTML=items.map(function(i){return '<a href="'+i[2]+'" target="_blank" rel="noopener"><i>'+i[0]+'</i>'+i[1]+'</a>'}).join('');</script></body></html>
