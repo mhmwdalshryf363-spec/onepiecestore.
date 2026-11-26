@@ -5,7 +5,7 @@ var SITE = {
   facebook: 'https://www.facebook.com/share/194MGY1kdn/',
   instagram: 'https://www.instagram.com/el__mnse____14__0600?igsh=MW9sNHl4ODd0dG5ldQ==',
   tiktok: 'https://www.tiktok.com/@el_mnse_140600',
-  youtube: '' /* ضع رابط قناة يوتيوب هنا */
+  youtube: 'https://www.youtube.com/channel/UCY2gAAytSVRWMa170-vq1OA'
 };
 var CATS = {collectibles:'مقتنيات',caps:'كابات',tshirts:'تيشيرتات',mugs:'أكواب'};
 var ICON = {collectibles:'🏴‍☠️',caps:'🧢',tshirts:'👕',mugs:'☕'};
